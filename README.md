@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,45:2563EB,100:14B8A6&height=190&section=header&text=CornersOfTheCity&fontSize=46&fontColor=F8FAFC&animation=fadeIn&fontAlignY=38&desc=Web3%20Contracts%20%7C%20Backend%20Infrastructure%20%7C%20On-chain%20Systems&descAlignY=58&descSize=16" alt="CornersOfTheCity profile header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,45:2563EB,100:14B8A6&height=190&section=header&text=CornersOfTheCity&fontSize=46&fontColor=F8FAFC&animation=fadeIn&fontAlignY=38&desc=Web3%20Backend%20Infrastructure%20%7C%20Smart%20Contracts%20%7C%20On-chain%20Data&descAlignY=58&descSize=16" alt="CornersOfTheCity profile header" />
 </p>
 
 <p align="center">
@@ -9,22 +9,34 @@
   <a href="https://github.com/CornersOfTheCity?tab=repositories&q=&type=&language=typescript&sort="><img src="https://img.shields.io/badge/TypeScript-Indexers-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript indexers" /></a>
 </p>
 
-<h3 align="center">Smart contracts, backend services, and protocol experiments for Web3 products.</h3>
+<h3 align="center">Web3 backend engineer building payment, wallet, contract, and on-chain data systems.</h3>
 
 <p align="center">
-  I work across EVM contracts, Go services, TypeScript indexers, payment flows, and on-chain data pipelines.
-  My favorite problems live at the boundary between contract correctness and reliable backend infrastructure.
+  I work mostly on backend infrastructure for Web3 products: service APIs, transaction state machines,
+  event scanners, contract integrations, and the operational glue between users, databases, and chains.
 </p>
 
 ---
 
+### What I Build
+
+Most production and organization work is not fully represented by public repositories, so this profile is a technical map rather than a complete project inventory.
+
+```txt
+Backend Services       Go / Node.js / TypeScript APIs, workers, payment and wallet flows
+On-chain Indexing      Event scanners, block/log polling, idempotent processing, DB persistence
+Contract Integration   ABI calls, deployment scripts, verification, testnet/mainnet operations
+Smart Contracts        Solidity, Foundry, Hardhat, Tact/TON experiments, protocol prototypes
+Reliability Mindset    State consistency, retry design, confirmation tracking, failure recovery
+```
+
 ### Focus
 
 ```txt
-Smart Contracts     Solidity, Foundry, Hardhat, deployment scripts, test workflows
-Backend Systems     Go, Node.js, TypeScript, APIs, workers, PostgreSQL-backed services
-On-chain Data       Event scanners, chain integrations, indexing, payment state tracking
-Protocol Research   ZK privacy contracts, Merkle trees, DeFi incident reproduction
+Payment Backends       Scan-code payment flows, order states, chain confirmations
+Wallet Infrastructure  Account flows, asset movement, contract/service boundaries
+Data Pipelines         Chain event ingestion, normalized storage, backend reconciliation
+Protocol Research      ZK privacy contracts, Merkle trees, DeFi incident reproduction
 ```
 
 ### Toolkit
@@ -43,31 +55,56 @@ Protocol Research   ZK privacy contracts, Merkle trees, DeFi incident reproducti
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 </p>
 
-### Selected Work
+### Backend & Protocol Experience
 
 <table>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/CornersOfTheCity/GUGUContracts">GUGUContracts</a></h3>
-      <p>Solidity contract workspace for the GUGU ecosystem, using a Foundry-style development flow for build, test, and deployment tasks.</p>
-      <p><code>Solidity</code> <code>Foundry</code> <code>EVM</code></p>
+      <h3>Payment & Wallet Backends</h3>
+      <p>Backend flows for scan-code payments, wallet-related state, transaction lifecycle tracking, and service-side chain integration.</p>
+      <p><code>Go</code> <code>Node.js</code> <code>PostgreSQL</code> <code>Payments</code></p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/CornersOfTheCity/ScanCodePay">ScanCodePay</a></h3>
-      <p>Go backend project around scan-code payment flows, useful for payment orchestration, transaction state, and service-side integration.</p>
-      <p><code>Go</code> <code>Payments</code> <code>Backend</code></p>
+      <h3>On-chain Data Services</h3>
+      <p>Event scanners and indexing services that turn contract logs, chain state, and confirmations into queryable backend data.</p>
+      <p><code>TypeScript</code> <code>TON</code> <code>Indexers</code> <code>Workers</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
+      <h3>Contract Engineering</h3>
+      <p>Solidity contract workspaces, deployment scripts, verification flows, Foundry/Hardhat testing, and backend-facing contract calls.</p>
+      <p><code>Solidity</code> <code>Foundry</code> <code>Hardhat</code> <code>EVM</code></p>
+    </td>
+    <td width="50%">
+      <h3>Protocol Research</h3>
+      <p>ZK privacy contract implementation notes, Merkle tree mechanics, Circom/Groth16 workflows, and DeFi incident reproduction practice.</p>
+      <p><code>Circom</code> <code>snarkjs</code> <code>Merkle Trees</code> <code>Security Research</code></p>
+    </td>
+  </tr>
+</table>
+
+### Public Samples
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/CornersOfTheCity/ScanCodePay">ScanCodePay</a></h3>
+      <p>Go backend sample for scan-code payment flow design and transaction-side service logic.</p>
+    </td>
+    <td width="50%">
       <h3><a href="https://github.com/CornersOfTheCity/JapanMallScan">JapanMallScan</a></h3>
-      <p>TypeScript scanner for Tact contract event logs on TON, with endpoint, contract, API key, and PostgreSQL configuration.</p>
-      <p><code>TypeScript</code> <code>TON</code> <code>Indexer</code> <code>PostgreSQL</code></p>
+      <p>TypeScript service for scanning Tact contract event logs on TON with PostgreSQL configuration.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/CornersOfTheCity/GUGUContracts">GUGUContracts</a></h3>
+      <p>Solidity contract workspace using Foundry-style development, build, test, and deployment workflows.</p>
     </td>
     <td width="50%">
       <h3><a href="https://github.com/CornersOfTheCity/tornadocash-core">tornadocash-core</a></h3>
-      <p>ZK privacy contract implementation notes covering Merkle trees, Circom circuits, Groth16 setup, verifier generation, and Sepolia deployment.</p>
-      <p><code>JavaScript</code> <code>Hardhat</code> <code>Circom</code> <code>snarkjs</code></p>
+      <p>ZK contract research project covering circuits, verifier generation, deployment, and testing notes.</p>
     </td>
   </tr>
 </table>
@@ -76,15 +113,18 @@ Protocol Research   ZK privacy contracts, Merkle trees, DeFi incident reproducti
 
 ```mermaid
 flowchart LR
-  Contracts["Contracts<br/>Solidity / Foundry / Hardhat"]
-  Backend["Backend<br/>Go / Node.js / TypeScript"]
-  Data["On-chain Data<br/>Events / Indexers / PostgreSQL"]
-  Products["Web3 Products<br/>Payments / Minting / Protocol Tools"]
+  Backend["Backend Services<br/>Go / Node.js / TypeScript"]
+  State["State Layer<br/>PostgreSQL / Idempotency / Reconciliation"]
+  Chains["Chains & Contracts<br/>EVM / TON / Solana"]
+  Products["Product Flows<br/>Payments / Wallets / Protocol Tools"]
+  Ops["Operations<br/>Monitoring / Retries / Recovery"]
 
-  Contracts --> Products
   Backend --> Products
-  Contracts --> Data
-  Data --> Backend
+  Backend --> State
+  Chains --> Backend
+  Chains --> State
+  State --> Products
+  Ops --> Backend
 ```
 
 ### GitHub Signals
@@ -101,5 +141,5 @@ flowchart LR
 ---
 
 <p align="center">
-  <sub>Building contract logic and backend infrastructure for products that need to survive real on-chain state.</sub>
+  <sub>Building backend infrastructure for products that need to survive real on-chain state.</sub>
 </p>
